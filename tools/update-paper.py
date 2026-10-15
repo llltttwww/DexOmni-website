@@ -6,7 +6,6 @@ import re
 from pathlib import Path
 
 from pypdf import PdfReader, PdfWriter
-from pypdf.generic import TextStringObject
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--source', type=Path, required=True)
@@ -16,22 +15,6 @@ site = Path(__file__).resolve().parents[1]
 target = site / 'dist/assets/DexOmni.pdf'
 reader = PdfReader(args.source)
 writer = PdfWriter(clone_from=reader)
-removed = 0
-for page in writer.pages:
-    if 'prompt revision' not in page.extract_text():
-        continue
-    stream = page.get_contents()
-    for operands, operator in stream.operations:
-        if operator != b'TJ':
-            continue
-        parts = operands[0]
-        for index in range(len(parts) - 1, -1, -1):
-            if isinstance(parts[index], TextStringObject) and re.fullmatch(r'V\d+', str(parts[index])):
-                del parts[index]
-                if index < len(parts) and isinstance(parts[index], (int, float)):
-                    del parts[index]
-                removed += 1
-    page.replace_contents(stream)
 seen = set()
 for page in writer.pages:
     for image in list(page.images):
@@ -47,16 +30,8 @@ writer.write(candidate)
 after = PdfReader(candidate)
 assert len(after.pages) == len(reader.pages)
 for before, page in zip(reader.pages, after.pages):
-    text = before.extract_text()
-    expected = re.sub(r'\bV\d+\s+', '', text) if 'prompt revision' in text else text
-    actual = page.extract_text()
-    if expected != text:
-        # Removing a label at a line end can leave its original line break.
-        # Ignore that whitespace only on the page with the removed label.
-        assert expected.split() == actual.split(), 'Unexpected change to manuscript text'
-    else:
-        assert expected == actual, 'Unexpected change to manuscript text'
-assert not re.search(r'\bV\d+\s+prompt revision', '\n'.join(p.extract_text() for p in after.pages), re.I)
+    assert before.extract_text() == page.extract_text(), 'Unexpected change to manuscript text'
+assert not re.search(r'\bV1[56]\b', '\n'.join(p.extract_text() for p in after.pages), re.I), 'Remove internal labels in the manuscript source before publishing'
 assert candidate.stat().st_size < 25 * 1024 * 1024
 candidate.replace(target)
 sha = lambda p: hashlib.sha256(p.read_bytes()).hexdigest()
@@ -67,9 +42,9 @@ receipt = {
     'website_pdf_sha256': sha(target),
     'pages': len(after.pages),
     'website_pdf_bytes': target.stat().st_size,
-    'retired_internal_labels_removed': removed,
+    'retired_internal_labels_removed': 0,
     'all_other_extracted_text_preserved': True,
-    'text_validation': 'Exact text; whitespace normalized only on pages with a removed internal label',
+    'text_validation': 'Exact extracted text on every page; no textual post-processing',
     'image_compression': 'RGB JPEG quality 87; layout and page count preserved',
 }
 (site / 'tools/paper-source.json').write_text(json.dumps(receipt, indent=2) + '\n')
