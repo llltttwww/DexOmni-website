@@ -1,0 +1,86 @@
+{
+  "source": "Current author-approved arXiv manuscript root.tex",
+  "revision": "7f164099235c8824e454bcff90bc45de7ae63229",
+  "root_tex_sha256": "3ad66c52db30b4352d3cac0972c1dc3459090ad2ed4e8b1a37bf9f1a333bfcf7",
+  "authors": [
+    {
+      "name": "Tianwei Luo",
+      "markers": "1,*,†"
+    },
+    {
+      "name": "Yiming He",
+      "markers": "1,*,†"
+    },
+    {
+      "name": "Hongjin Wu",
+      "markers": "1,*"
+    },
+    {
+      "name": "Ting Pan",
+      "markers": "2,*"
+    },
+    {
+      "name": "Debin Ren",
+      "markers": "3,*"
+    },
+    {
+      "name": "Haorui Guo",
+      "markers": "3,*"
+    },
+    {
+      "name": "Junlin Yang",
+      "markers": "1"
+    },
+    {
+      "name": "Yuxin Zuo",
+      "markers": "1"
+    },
+    {
+      "name": "Zhehao Kou",
+      "markers": "1"
+    },
+    {
+      "name": "Kaisen Yang",
+      "markers": "1"
+    },
+    {
+      "name": "Zhuoqun Lai",
+      "markers": "3"
+    },
+    {
+      "name": "Yi Ding",
+      "markers": "3"
+    },
+    {
+      "name": "Jiale Yu",
+      "markers": "1"
+    },
+    {
+      "name": "Yuchen Zhang",
+      "markers": "4"
+    },
+    {
+      "name": "Zijie Qiu",
+      "markers": "1"
+    },
+    {
+      "name": "Haozhan Li",
+      "markers": "1"
+    },
+    {
+      "name": "Ning Ding",
+      "markers": "1,‡"
+    }
+  ],
+  "institutions": {
+    "1": "Tsinghua University",
+    "2": "Beijing University of Posts and Telecommunications",
+    "3": "NatureWill",
+    "4": "Peking University"
+  },
+  "roles": {
+    "*": "Equal contribution",
+    "†": "Project lead",
+    "‡": "Corresponding author"
+  }
+}

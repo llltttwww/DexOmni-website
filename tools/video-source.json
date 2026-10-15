@@ -1,0 +1,19 @@
+{
+  "manuscript_revision": "7f164099235c8824e454bcff90bc45de7ae63229",
+  "duration_seconds": 120,
+  "frames": 3600,
+  "fps": 30,
+  "dimensions": [
+    1280,
+    720
+  ],
+  "copy_sha256": "e4f03b12c8c7936676a1a7337cadc754d4e9fe0b7d77dee3410a990630f218ea",
+  "video_sha256": "28f802f8c3227bcb3e3ca32d51c89c6db5a4108290c81ae834c325ee5508c82d",
+  "render": "Remotion 4.0.532 Film composition with refreshed font subsets",
+  "changes": [
+    "Neutral opening description",
+    "Regression controls rather than equalized demonstrations/duration",
+    "Instruction grounding and physical execution both acknowledged"
+  ],
+  "soundtrack": "Original complete soundtrack preserved"
+}

@@ -1,0 +1,9 @@
+.DS_Store
+node_modules/
+tools/*contact*.jpg
+tools/qa/
+tools/paper-preview.png
+tools/paper-appendix.png
+*.tar.gz
+.openai/*.log
+.openai/*.lock

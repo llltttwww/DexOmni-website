@@ -1,0 +1,530 @@
+[
+  {
+    "id": "t01_align_blocks_in_midair",
+    "short": "T01",
+    "title": "Align blocks in midair",
+    "family": "core",
+    "description": "Lift both assigned blocks with their assigned hands, then mate their marked faces in midair and hold the physical contact stable for 0.4 seconds.",
+    "image": "assets/t01_align_blocks_in_midair.webp"
+  },
+  {
+    "id": "t02_connect_charger_and_cable",
+    "short": "T02",
+    "title": "Connect charger and cable",
+    "family": "core",
+    "description": "Insert the charger plug into the power strip first, then insert the charging cable connector into the charger head.",
+    "image": "assets/t02_connect_charger_and_cable.webp"
+  },
+  {
+    "id": "t03_cover_box",
+    "short": "T03",
+    "title": "Cover box",
+    "family": "core",
+    "description": "Align the box lid and place it onto the clear box.",
+    "image": "assets/t03_cover_box.webp"
+  },
+  {
+    "id": "t04_cover_pitcher",
+    "short": "T04",
+    "title": "Cover pitcher",
+    "family": "core",
+    "description": "Align the pitcher lid and place it onto the pitcher body.",
+    "image": "assets/t04_cover_pitcher.webp"
+  },
+  {
+    "id": "t05_fill_cup",
+    "short": "T05",
+    "title": "Fill cup",
+    "family": "core",
+    "description": "Hold the white ceramic mug under the outlet with its local +Z axis within 15 degrees, inclusive, of world +Z. Pull the right lever outward toward the robots along its source-aligned hinge (with a world -X component) beyond 70 percent of its 45-degree opening travel; left-right temperature motion does not count. Keep the faucet open while the visible stream enters the mug for 15 consecutive control frames (0.5 seconds), then place the upright mug on the marked counter pad outside the sink and close the faucet.",
+    "image": "assets/t05_fill_cup.webp"
+  },
+  {
+    "id": "t06_fit_device_cover",
+    "short": "T06",
+    "title": "Fit device cover",
+    "family": "core",
+    "description": "Align the cover with the device body and fit the two pieces together.",
+    "image": "assets/t06_fit_device_cover.webp"
+  },
+  {
+    "id": "t07_flip_sponge",
+    "short": "T07",
+    "title": "Flip sponge",
+    "family": "core",
+    "description": "Stabilize the YCB skillet with the left hand. With the right hand, grasp the YCB spatula, slide its blade under the YCB sponge, lift and flip the sponge once, then leave the opposite face stable inside the skillet. Do not touch the sponge directly with either hand.",
+    "image": "assets/t07_flip_sponge.webp"
+  },
+  {
+    "id": "t08_hammer_nail",
+    "short": "T08",
+    "title": "Hammer nail",
+    "family": "core",
+    "description": "Pick up the wood block with the left hand, keep the vertical nail inserted in the block, then use the right hand to pick up the hammer and strike the nail head so the nail sinks slightly into the block.",
+    "image": "assets/t08_hammer_nail.webp"
+  },
+  {
+    "id": "t09_insert_peg",
+    "short": "T09",
+    "title": "Insert peg",
+    "family": "core",
+    "description": "Insert the round peg into the socket tray hole.",
+    "image": "assets/t09_insert_peg.webp"
+  },
+  {
+    "id": "t10_lift_carton",
+    "short": "T10",
+    "title": "Lift carton",
+    "family": "core",
+    "description": "Support the carton from both lower sides, lift it clear of the table, and maintain a stable hold.",
+    "image": "assets/t10_lift_carton.webp"
+  },
+  {
+    "id": "t11_line_up_blocks",
+    "short": "T11",
+    "title": "Line up blocks",
+    "family": "core",
+    "description": "Use only the set square tool to push three scattered wood blocks onto the baseline and align them side by side.",
+    "image": "assets/t11_line_up_blocks.webp"
+  },
+  {
+    "id": "t12_load_and_start_microwave",
+    "short": "T12",
+    "title": "Load and start microwave",
+    "family": "core",
+    "description": "Open the microwave door, carry the plate with its food box into the microwave, close the door, then press the green start button.",
+    "image": "assets/t12_load_and_start_microwave.webp"
+  },
+  {
+    "id": "t13_load_cans",
+    "short": "T13",
+    "title": "Load cans",
+    "family": "core",
+    "description": "Pick up the left and right tomato-soup cans with their assigned hands, cross-load each can into the opposite-side bin partition, then release both cans within the synchronization window and leave them stable.",
+    "image": "assets/t13_load_cans.webp"
+  },
+  {
+    "id": "t14_move_and_click_mouse",
+    "short": "T14",
+    "title": "Move and click mouse",
+    "family": "core",
+    "description": "Move the mouse onto the mouse pad and click the left mouse button.",
+    "image": "assets/t14_move_and_click_mouse.webp"
+  },
+  {
+    "id": "t15_open_drawers",
+    "short": "T15",
+    "title": "Open drawers",
+    "family": "core",
+    "description": "Use each assigned hand to pull the highlighted drawer on its side beyond 60 percent travel; each side independently selects one of three drawers per episode, and both thresholds must be crossed within 1.2 seconds.",
+    "image": "assets/t15_open_drawers.webp"
+  },
+  {
+    "id": "t16_open_laptop",
+    "short": "T16",
+    "title": "Open laptop",
+    "family": "core",
+    "description": "Use the right hand to lift the initially closed display from its front edge and open it to the round target shown in the Success Condition panel. The base is fixed after each randomized reset.",
+    "image": "assets/t16_open_laptop.webp"
+  },
+  {
+    "id": "t17_open_latched_door",
+    "short": "T17",
+    "title": "Open latched door",
+    "family": "core",
+    "description": "Brace and push the door panel with the left hand. With the right hand, press the long Helindu near-side lever past 25 degrees for five control frames, keep it pressed until the door passes 12 degrees, then push the door to at least 45 degrees and hold it stable. This task has no front table; avoid the far-side Handle001. Door-panel and door-frame contact is allowed.",
+    "image": "assets/t17_open_latched_door.webp"
+  },
+  {
+    "id": "t18_open_micropipette_box",
+    "short": "T18",
+    "title": "Open micropipette box",
+    "family": "core",
+    "description": "Open the articulated micropipette box while preserving stable contact.",
+    "image": "assets/t18_open_micropipette_box.webp"
+  },
+  {
+    "id": "t19_orient_cup_upright",
+    "short": "T19",
+    "title": "Orient cup upright",
+    "family": "core",
+    "description": "Pick up the cup and place it upright on the table with its bottom facing down.",
+    "image": "assets/t19_orient_cup_upright.webp"
+  },
+  {
+    "id": "t20_pass_and_orient_pen",
+    "short": "T20",
+    "title": "Pass and orient pen",
+    "family": "core",
+    "description": "Touch the pen anywhere with the right hand only, then with both hands at the same time, then with the left hand only, and finish with the left hand holding the pen tip-up at 90 +/- 2 degrees from horizontal; after both hands have touched it, do not drop the pen.",
+    "image": "assets/t20_pass_and_orient_pen.webp"
+  },
+  {
+    "id": "t21_pass_block",
+    "short": "T21",
+    "title": "Pass block",
+    "family": "core",
+    "description": "Pick up the left block with the left hand, transfer it to the right hand in the middle, then place it stably inside the right box.",
+    "image": "assets/t21_pass_block.webp"
+  },
+  {
+    "id": "t22_pass_screwdriver",
+    "short": "T22",
+    "title": "Pass screwdriver",
+    "family": "core",
+    "description": "Touch the screwdriver with the right hand first, then touch it with the left hand while it is airborne, and let it land in the horizontal green target zone.",
+    "image": "assets/t22_pass_screwdriver.webp"
+  },
+  {
+    "id": "t23_photograph_logo",
+    "short": "T23",
+    "title": "Photograph logo",
+    "family": "core",
+    "description": "Pick up the camera, aim it at the logo, and press the shutter button.",
+    "image": "assets/t23_photograph_logo.webp"
+  },
+  {
+    "id": "t24_place_ball_in_bowl",
+    "short": "T24",
+    "title": "Place ball in bowl",
+    "family": "core",
+    "description": "Pick the specified ball and place it into the bowl.",
+    "image": "assets/t24_place_ball_in_bowl.webp"
+  },
+  {
+    "id": "t25_place_cup_on_plate",
+    "short": "T25",
+    "title": "Place cup on plate",
+    "family": "core",
+    "description": "Pick the brown cup and place it at the center of the plate with its bottom facing down.",
+    "image": "assets/t25_place_cup_on_plate.webp"
+  },
+  {
+    "id": "t26_place_fruit_in_bucket",
+    "short": "T26",
+    "title": "Place fruit in bucket",
+    "family": "core",
+    "description": "Pick the specified fruit from the mixed fruits and place it into the bucket.",
+    "image": "assets/t26_place_fruit_in_bucket.webp"
+  },
+  {
+    "id": "t27_place_largest_fitting_ball",
+    "short": "T27",
+    "title": "Place largest fitting ball",
+    "family": "core",
+    "description": "Find the target C, G, or J YCB cup in the shuffled cup row. Choose the largest of the four balls in the shuffled ball row that can fit in that cup, place it into the cup using either hand as needed, release both hands, and leave the ball and cup stable.",
+    "image": "assets/t27_place_largest_fitting_ball.webp"
+  },
+  {
+    "id": "t28_place_tableware",
+    "short": "T28",
+    "title": "Place tableware",
+    "family": "core",
+    "description": "Follow the sampled single-step table-setting instruction. Move only the named YCB tableware object and leave the plate and distractors in place.",
+    "image": "assets/t28_place_tableware.webp"
+  },
+  {
+    "id": "t29_place_wine_glass",
+    "short": "T29",
+    "title": "Place wine glass",
+    "family": "core",
+    "description": "Place the YCB plastic wine glass upright at the center of the YCB plate, release it, and leave it stable. Only the final placement is evaluated; no minimum travel or lift history is required.",
+    "image": "assets/t29_place_wine_glass.webp"
+  },
+  {
+    "id": "t30_pour_seasonings",
+    "short": "T30",
+    "title": "Pour seasonings",
+    "family": "core",
+    "description": "The salt jar and cyan target are randomized within the left-hand comfort zone; the pepper jar and orange target are randomized within the right-hand comfort zone. Use the assigned hands, tilt both caps downward, and sprinkle their blue water-flow proxies into the matching targets with a synchronized overlap. Complete before either jar accumulates more than 4 seconds of pouring or the scene resets.",
+    "image": "assets/t30_pour_seasonings.webp"
+  },
+  {
+    "id": "t31_prepare_coffee",
+    "short": "T31",
+    "title": "Prepare coffee",
+    "family": "core",
+    "description": "Open either cabinet door, remove the mug, then close both doors. Place the mug upright on the coffee-machine base with its opening directly under the circular outlet. Press the bright-green start button and keep the mug aligned for the full 2-second brew. Place the filled mug upright and stable on the serving tray, then release it with both hands.",
+    "image": "assets/t31_prepare_coffee.webp"
+  },
+  {
+    "id": "t32_press_soap_pump",
+    "short": "T32",
+    "title": "Press soap pump",
+    "family": "core",
+    "description": "Place the dish sponge under the dish-soap bottle, hold the bottle with the right hand, align its outlet over the sponge, and physically depress the visible pump head with the right hand.",
+    "image": "assets/t32_press_soap_pump.webp"
+  },
+  {
+    "id": "t33_reposition_marker_grasp",
+    "short": "T33",
+    "title": "Reposition marker grasp",
+    "family": "core",
+    "description": "Pick up the capped YCB marker with the right hand. From the grasp point recorded on each pickup, move both the thumb and index contact points at least 2.5 cm along the marker toward its writing tip under the cap. Success occurs while both fingers hold the lifted marker there. Dropping it onto the table does not reset the episode; the next pickup records a new starting grasp point.",
+    "image": "assets/t33_reposition_marker_grasp.webp"
+  },
+  {
+    "id": "t34_roll_ball_through_gate",
+    "short": "T34",
+    "title": "Roll ball through gate",
+    "family": "core",
+    "description": "The tennis ball may start on either side of the centred cracker and sugar boxes. Use the corresponding hand to roll or flick it fully through the opening: left hand for left-to-right or right hand for right-to-left. Keep the ball on the table; do not pick up or throw it, and do not touch either box with the hand or ball because any box contact resets the attempt. The ball does not need to stop after passing.",
+    "image": "assets/t34_roll_ball_through_gate.webp"
+  },
+  {
+    "id": "t35_rotate_propeller",
+    "short": "T35",
+    "title": "Rotate propeller",
+    "family": "core",
+    "description": "Rotate the YCB airplane propeller through 1080 degrees of accumulated absolute angular travel. Each 360 degrees counts as one turn, in either direction; passive coasting also counts. Three turns complete the task.",
+    "image": "assets/t35_rotate_propeller.webp"
+  },
+  {
+    "id": "t36_scoop_marbles",
+    "short": "T36",
+    "title": "Scoop marbles",
+    "family": "core",
+    "description": "Use the right hand to control the spoon: keep it level or slightly nose-down, scoop the marble, carry it over the bowl, and pour it into the bowl. The left hand may touch the marble but must not pick it up or lift it. The right hand must never touch the marble directly.",
+    "image": "assets/t36_scoop_marbles.webp"
+  },
+  {
+    "id": "t37_scrub_bottle",
+    "short": "T37",
+    "title": "Scrub bottle",
+    "family": "core",
+    "description": "Retrieve and stabilize the labeled water bottle with the left hand, retrieve the cleaning brush with the right hand, scrub the lower, middle, and upper bottle bands in order with physical bristle contact, then release both objects and leave the bottle upright and stable.",
+    "image": "assets/t37_scrub_bottle.webp"
+  },
+  {
+    "id": "t38_set_dual_knobs",
+    "short": "T38",
+    "title": "Set dual knobs",
+    "family": "core",
+    "description": "Use the left hand on the left knob and the right hand on the right knob, start both rotations together, set both displayed targets, release both knobs, and keep the settings stable.",
+    "image": "assets/t38_set_dual_knobs.webp"
+  },
+  {
+    "id": "t39_set_timer",
+    "short": "T39",
+    "title": "Set timer",
+    "family": "core",
+    "description": "Stabilize the YCB timer with the left hand, program the prompted minutes and seconds with a right fingertip, press START/STOP last, withdraw both hands, and wait for one countdown tick.",
+    "image": "assets/t39_set_timer.webp"
+  },
+  {
+    "id": "t40_slide_knife_blade",
+    "short": "T40",
+    "title": "Slide knife blade",
+    "family": "core",
+    "description": "Pick up the utility knife with the right hand. After pickup, touch the slider with the left fingertips and move it to the episode target: bottom to retract the blade or top to extend it.",
+    "image": "assets/t40_slide_knife_blade.webp"
+  },
+  {
+    "id": "t41_sort_nested_cups",
+    "short": "T41",
+    "title": "Sort nested cups",
+    "family": "core",
+    "description": "Separate the three nested YCB cups, then place them upright in a straight row from left to right in the main camera: large, medium, small. Release all cups.",
+    "image": "assets/t41_sort_nested_cups.webp"
+  },
+  {
+    "id": "t42_sort_objects",
+    "short": "T42",
+    "title": "Sort objects",
+    "family": "core",
+    "description": "Find six targets among the clutter and sort boxes, cans, and dishes into their marked baskets. Transfer the far-right target through both hands before placing it.",
+    "image": "assets/t42_sort_objects.webp"
+  },
+  {
+    "id": "t43_squeeze_scissors",
+    "short": "T43",
+    "title": "Squeeze scissors",
+    "family": "core",
+    "description": "Lift the scissors clear of the table and make three complete cuts in the air. Try one hand first; the other hand may reposition or assist.",
+    "image": "assets/t43_squeeze_scissors.webp"
+  },
+  {
+    "id": "t44_stack_blocks",
+    "short": "T44",
+    "title": "Stack blocks",
+    "family": "core",
+    "description": "Arrange the four blocks into four distinct height layers with the large wood block on the bottom layer, then keep the hand from touching the blocks for 0.5 seconds.",
+    "image": "assets/t44_stack_blocks.webp"
+  },
+  {
+    "id": "t45_stir_pot",
+    "short": "T45",
+    "title": "Stir pot",
+    "family": "core",
+    "description": "Hold the Dutch oven fixed with the left hand while the right hand moves the spoon through six ordered checkpoints and over 650 degrees.",
+    "image": "assets/t45_stir_pot.webp"
+  },
+  {
+    "id": "t46_store_charger",
+    "short": "T46",
+    "title": "Store charger",
+    "family": "core",
+    "description": "Hold the drawer open with the left hand, place the charger fully inside with the right hand, release the charger, then release the left hand and keep the result stable for 0.5 seconds.",
+    "image": "assets/t46_store_charger.webp"
+  },
+  {
+    "id": "t47_trigger_drill_on_block",
+    "short": "T47",
+    "title": "Trigger drill on block",
+    "family": "core",
+    "description": "Bring the unpowered YCB drill into physical contact with the YCB wood block, then press the physical trigger to at least 80 percent and hold for 0.5 seconds while maintaining drill-block contact. Any grasp and any finger may be used. If already pressed, release the trigger while in contact before pressing again. Do not drill the block.",
+    "image": "assets/t47_trigger_drill_on_block.webp"
+  },
+  {
+    "id": "t48_unfold_fan",
+    "short": "T48",
+    "title": "Unfold fan",
+    "family": "core",
+    "description": "Use both hands to grasp the two outermost fan ribs and unfold the fan symmetrically to the episode target angle (60, 90, or 120 degrees), then hold it steadily on the table.",
+    "image": "assets/t48_unfold_fan.webp"
+  },
+  {
+    "id": "t49_unfold_ruler",
+    "short": "T49",
+    "title": "Unfold ruler",
+    "family": "core",
+    "description": "Pull both outer ruler segments through their real hinges until all three segments are straight. The ruler starts at a randomized tabletop pose and remains free to move; either hand may be used. Success is immediate when both absolute hinge angles reach 175–180 degrees; +180 and −180 are equivalent, and no release or stability hold is required.",
+    "image": "assets/t49_unfold_ruler.webp"
+  },
+  {
+    "id": "t50_water_plant",
+    "short": "T50",
+    "title": "Water plant",
+    "family": "core",
+    "description": "Grasp and aim the spray bottle before pressing; pressing emits water immediately, and water that misses both the plant and soil fails the attempt.",
+    "image": "assets/t50_water_plant.webp"
+  },
+  {
+    "id": "eval_comb01_cover_pitcher_and_box",
+    "short": "Comb-01",
+    "title": "Cover pitcher and box",
+    "family": "composition",
+    "description": "First align and seat the pitcher lid, then release it and let it settle. Next align and seat the clear-box lid, release it and let it settle. Both lids must remain correctly seated on their own containers.",
+    "image": "assets/eval_comb01_cover_pitcher_and_box.webp"
+  },
+  {
+    "id": "eval_comb02_open_laptop_and_click_mouse",
+    "short": "Comb-02",
+    "title": "Open laptop and click mouse",
+    "family": "composition",
+    "description": "Open the initially closed laptop to the requested angle with the right hand and hold it steadily. Then move the mouse onto its pad without pressing either button, and press the left button. Keep the laptop at the target angle.",
+    "image": "assets/eval_comb02_open_laptop_and_click_mouse.webp"
+  },
+  {
+    "id": "eval_comb03_pass_block_and_close_box",
+    "short": "Comb-03",
+    "title": "Pass block and close box",
+    "family": "composition",
+    "description": "Pick up the left block with the left hand, hand it to the right hand in the middle, and release it stably inside the clear box. Then use the right hand to pick up the lid, align and close the box, and release.",
+    "image": "assets/eval_comb03_pass_block_and_close_box.webp"
+  },
+  {
+    "id": "eval_comb04_place_fruit_and_photograph_logo",
+    "short": "Comb-04",
+    "title": "Place fruit and photograph logo",
+    "family": "composition",
+    "description": "Pick the specified fruit, place it in the bucket and release it. Then pick up the camera, aim at the logo on the bucket and press the shutter.",
+    "image": "assets/eval_comb04_place_fruit_and_photograph_logo.webp"
+  },
+  {
+    "id": "eval_comb05_scrub_bottle_then_fill_cup",
+    "short": "Comb-05",
+    "title": "Scrub bottle then fill cup",
+    "family": "composition",
+    "description": "Scrub the bottle, then position the cup for filling, completing the stages in order.",
+    "image": "assets/eval_comb05_scrub_bottle_then_fill_cup.webp"
+  },
+  {
+    "id": "eval_comb06_season_and_stir",
+    "short": "Comb-06",
+    "title": "Season and stir",
+    "family": "composition",
+    "description": "Use the left hand for salt and the right hand for pepper. Pour both into the same open pot together, then put down and release the jars. Hold the pot with the left hand and stir with the right-hand spoon through all six angular sectors and more than 650 degrees, keeping the pot stable.",
+    "image": "assets/eval_comb06_season_and_stir.webp"
+  },
+  {
+    "id": "eval_flex01_compress_sponge_into_mug",
+    "short": "Flex-01",
+    "title": "Compress sponge into mug",
+    "family": "deformable",
+    "description": "Use the left hand to stabilize the YCB mug. With the right hand, physically grasp and compress the YCB sponge, insert it through the mug rim until it is mostly inside, then release both objects and leave the mug upright and stable.",
+    "image": "assets/eval_flex01_compress_sponge_into_mug.webp"
+  },
+  {
+    "id": "eval_flex02_fold_towel_twice",
+    "short": "Flex-02",
+    "title": "Fold towel twice",
+    "family": "deformable",
+    "description": "Using both hands, fold the flat towel in half once. Keep the folded towel on the table, rotate it 90 degrees in the plane, then fold it in half a second time and release it stable on the table.",
+    "image": "assets/eval_flex02_fold_towel_twice.webp"
+  },
+  {
+    "id": "eval_flex03_pack_pillow",
+    "short": "Flex-03",
+    "title": "Pack pillow",
+    "family": "deformable",
+    "description": "Use both hands to lift the foam pillow clear of the table, place it fully inside the open carton, release both hands, and keep it stable for one second.",
+    "image": "assets/eval_flex03_pack_pillow.webp"
+  },
+  {
+    "id": "eval_gen01_cover_lunchbox",
+    "short": "Gen-01",
+    "title": "Cover lunchbox",
+    "family": "generalization",
+    "description": "Align the lunchbox lid and place it onto the lunchbox.",
+    "image": "assets/eval_gen01_cover_lunchbox.webp"
+  },
+  {
+    "id": "eval_gen02_open_trash_bin",
+    "short": "Gen-02",
+    "title": "Open trash bin",
+    "family": "generalization",
+    "description": "The trash bin is fixed after reset at a randomized tabletop pose and yaw. Open its hinged lid from closed to at least 75 degrees. Success is immediate when the physical lid reaches that opening. Either hand may be used; no assigned contact, release, or stable hold is required.",
+    "image": "assets/eval_gen02_open_trash_bin.webp"
+  },
+  {
+    "id": "eval_gen03_orient_bottle_upright",
+    "short": "Gen-03",
+    "title": "Orient bottle upright",
+    "family": "generalization",
+    "description": "Pick up the yellow mustard bottle, place it upright, release it, and maintain the final pose.",
+    "image": "assets/eval_gen03_orient_bottle_upright.webp"
+  },
+  {
+    "id": "eval_gen04_pass_glue_stick",
+    "short": "Gen-04",
+    "title": "Pass glue stick",
+    "family": "generalization",
+    "description": "Pick up the glue stick with the left hand, transfer it to the right hand in the middle, then place it stably inside the right tray and release it.",
+    "image": "assets/eval_gen04_pass_glue_stick.webp"
+  },
+  {
+    "id": "eval_gen05_set_mixer_knobs",
+    "short": "Gen-05",
+    "title": "Set mixer knobs",
+    "family": "generalization",
+    "description": "Use your left hand to turn the left knob counterclockwise and your right hand to turn the right knob clockwise, in either order. Set both displayed targets, release both knobs, and keep the settings stable.",
+    "image": "assets/eval_gen05_set_mixer_knobs.webp"
+  },
+  {
+    "id": "eval_gen06_spray_shoe",
+    "short": "Gen-06",
+    "title": "Spray shoe",
+    "family": "generalization",
+    "description": "Spray shoe.",
+    "image": "assets/eval_gen06_spray_shoe.webp"
+  },
+  {
+    "id": "eval_gen07_stack_boxes",
+    "short": "Gen-07",
+    "title": "Stack boxes",
+    "family": "generalization",
+    "description": "Arrange the four package boxes into four distinct height layers with the large package box on the bottom layer, then keep the hand from touching the boxes for 0.5 seconds.",
+    "image": "assets/eval_gen07_stack_boxes.webp"
+  }
+]
