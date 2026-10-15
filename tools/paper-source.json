@@ -1,11 +1,12 @@
 {
   "source": "Current author-approved arXiv manuscript",
-  "source_revision": "7f164099235c8824e454bcff90bc45de7ae63229",
-  "source_pdf_sha256": "9ca2ab970dc89a7e6542e25dff87e41f39fa0bc0aeaa1b0d1ce93708f57c0420",
-  "website_pdf_sha256": "97871d6eb96cea8627797b3279bb0b1ef999e72d7c1c83ba266f0cc3a7349249",
-  "pages": 46,
-  "website_pdf_bytes": 5136267,
+  "source_revision": "fd9426b4247796533325a88fd7e2b8f8664edf4a",
+  "source_pdf_sha256": "23b659e70e6c34764c7e5d456e4f4a2dc3f959eb256607489f55b465c4704582",
+  "website_pdf_sha256": "1064afab4022a1b1d27cc94bcefface7faf52ac1f6c07c7c6c4b94442734bbf2",
+  "pages": 47,
+  "website_pdf_bytes": 6302413,
   "retired_internal_labels_removed": 1,
   "all_other_extracted_text_preserved": true,
+  "text_validation": "Exact text; whitespace normalized only on pages with a removed internal label",
   "image_compression": "RGB JPEG quality 87; layout and page count preserved"
 }

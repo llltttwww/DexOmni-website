@@ -49,7 +49,13 @@ assert len(after.pages) == len(reader.pages)
 for before, page in zip(reader.pages, after.pages):
     text = before.extract_text()
     expected = re.sub(r'\bV\d+\s+', '', text) if 'prompt revision' in text else text
-    assert expected == page.extract_text(), 'Unexpected change to manuscript text'
+    actual = page.extract_text()
+    if expected != text:
+        # Removing a label at a line end can leave its original line break.
+        # Ignore that whitespace only on the page with the removed label.
+        assert expected.split() == actual.split(), 'Unexpected change to manuscript text'
+    else:
+        assert expected == actual, 'Unexpected change to manuscript text'
 assert not re.search(r'\bV\d+\s+prompt revision', '\n'.join(p.extract_text() for p in after.pages), re.I)
 assert candidate.stat().st_size < 25 * 1024 * 1024
 candidate.replace(target)
@@ -63,6 +69,7 @@ receipt = {
     'website_pdf_bytes': target.stat().st_size,
     'retired_internal_labels_removed': removed,
     'all_other_extracted_text_preserved': True,
+    'text_validation': 'Exact text; whitespace normalized only on pages with a removed internal label',
     'image_compression': 'RGB JPEG quality 87; layout and page count preserved',
 }
 (site / 'tools/paper-source.json').write_text(json.dumps(receipt, indent=2) + '\n')
