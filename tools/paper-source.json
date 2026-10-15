@@ -1,8 +1,8 @@
 {
   "source": "Current author-approved arXiv manuscript",
-  "source_revision": "5c49d6c131b957b261dcd0e2441f573457727990",
-  "source_pdf_sha256": "205d2f2f10b718db54b18d91d2cf6c7f0a8b5c817de69706b4e8b9027ef8c21a",
-  "website_pdf_sha256": "ef16a977f67c720eda8d46a3f4ca58524513179cb543aca3f8ffe4d2b38b0004",
+  "source_revision": "c607a79619fb6f1bc804545a49b9adfbec0c5526",
+  "source_pdf_sha256": "6c4374a36c3b0fe0b178390c70fd3ed76ae7f863293627df53ce8ceb297b960a",
+  "website_pdf_sha256": "46718b5ca0f3693acc4650b68c47ea0f2572eb048d386d84e17ec6ee32902f3d",
   "pages": 47,
   "website_pdf_bytes": 6286324,
   "retired_internal_labels_removed": 0,

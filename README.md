@@ -34,7 +34,7 @@ The responsive WebP files and social card derive from this image. It is intentio
 independent of the current paper's first figure.
 
 The author block and download PDF follow the current author-approved arXiv
-manuscript, revision `5c49d6c131b957b261dcd0e2441f573457727990`. The PDF has 47 pages.
+manuscript, revision `c607a79619fb6f1bc804545a49b9adfbec0c5526`. The PDF has 47 pages.
 Image compression reduces download size without changing layout or page count;
 all extracted text is verified unchanged against the compiled manuscript. Details and hashes are in `tools/paper-source.json`.
 Author order, affiliations, and contribution markers are in `tools/author-source.json`.
