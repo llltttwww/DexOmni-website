@@ -27,8 +27,9 @@ The page follows the conventional structure of research project pages such as
 RoboCasa and Nerfies, without copying their code or media.
 
 The opening figure retains the author's requested tall composition, natural arm
-pose, and complete cables. Its original is `dist/assets/dexomni-overview.jpg`
-(SHA-256 `5e973413d1a27521a4709958b84f3acfb78f85728669c09f38ce0bc8916a335f`).
+pose. The dangling cable beside the leftmost freestanding hand is removed.
+Its source image is `dist/assets/dexomni-overview.jpg`
+(SHA-256 `aa73db0a9231e0cff494e62f656603f77c64995874b6a4793fe704391281b628`).
 The responsive WebP files and social card derive from this image. It is intentionally
 independent of the current paper's first figure.
 
