@@ -27,8 +27,12 @@ def web_image(source, name, width=1200, quality=87):
         im.thumbnail((width, width))
         im.save(out / name, quality=quality, method=6)
 
-for name in ['handson-mark.svg', 'handson-wordmark.svg']:
-    shutil.copy2(root / 'handson-release/docs/pics' / name, out / name)
+brand = root / 'handson-release/docs/pics'
+for name in ['handson-mark.svg', 'handson-wordmark.svg', 'handson-lockup.svg', 'handson-lockup@2x.png']:
+    assert (brand / name).is_file(), f'Missing approved brand asset: {name}'
+for asset in brand.glob('handson-*'):
+    if asset.suffix in {'.svg', '.png'}:
+        shutil.copy2(asset, out / asset.name)
 shutil.copy2(root / 'dexomni-film/public/fonts/InterTight-normal-200_900.woff2', out / 'inter-tight.woff2')
 web_image(args.manuscript_root / 'figures/teleop-setup.png', 'teleoperation.webp', 1817, 92)
 web_image(root / 'handson-release/docs/pics/release-cameras.jpg', 'cameras.webp', 1600)
