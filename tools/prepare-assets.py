@@ -27,16 +27,16 @@ def web_image(source, name, width=1200, quality=87):
         im.thumbnail((width, width))
         im.save(out / name, quality=quality, method=6)
 
-for name in ['dexomni-mark.svg', 'dexomni-wordmark.svg']:
-    shutil.copy2(root / 'dexomni-release/docs/pics' / name, out / name)
+for name in ['handson-mark.svg', 'handson-wordmark.svg']:
+    shutil.copy2(root / 'handson-release/docs/pics' / name, out / name)
 shutil.copy2(root / 'dexomni-film/public/fonts/InterTight-normal-200_900.woff2', out / 'inter-tight.woff2')
 web_image(args.manuscript_root / 'figures/teleop-setup.png', 'teleoperation.webp', 1817, 92)
-web_image(root / 'dexomni-release/docs/pics/release-cameras.jpg', 'cameras.webp', 1600)
+web_image(root / 'handson-release/docs/pics/release-cameras.jpg', 'cameras.webp', 1600)
 for suffix in 'abcd':
     web_image(root / f'dexomni-film/public/img/rerender_{suffix}.png', f'appearance-{suffix}.webp', 800)
 
 # The release registry is the source of task membership and public identifiers.
-tree = ast.parse((root / 'dexomni-release/dexomni/dexomni/tasks/registry.py').read_text())
+tree = ast.parse((root / 'handson-release/handson/handson/tasks/registry.py').read_text())
 catalog = None
 for node in tree.body:
     if isinstance(node, ast.Assign) and any(isinstance(t, ast.Name) and t.id == '_CONFIG_MODULES' for t in node.targets):
@@ -55,7 +55,7 @@ for key in sorted(catalog, key=lambda k: (not k.startswith('t'), k)):
         label = short[:-2].capitalize() + '-' + short[-2:]
         picture = 'EVAL-' + short[:-2].capitalize() + short[-2:] + '.png'
     title = slug.replace('_', ' ').capitalize()
-    text = (root / 'dexomni-release/configs/multi_task' / (key + '.yaml')).read_text()
+    text = (root / 'handson-release/configs/multi_task' / (key + '.yaml')).read_text()
     match = re.search(r'^prompt:\s*(.+)$', text, re.M)
     try:
         prompt = ast.literal_eval(match[1]) if match else ''

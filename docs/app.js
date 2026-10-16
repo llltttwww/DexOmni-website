@@ -11,11 +11,11 @@ const dialog = document.querySelector('#task-dialog');
 
 function showTask(task) {
   document.querySelector('#dialog-image').src = task.image;
-  document.querySelector('#dialog-image').alt = task.title + ' in DexOmni simulation';
+  document.querySelector('#dialog-image').alt = task.title + ' in HandsOn simulation';
   document.querySelector('#dialog-family').textContent = task.short + ' / ' + familyDescriptions[task.family];
   document.querySelector('#dialog-title').textContent = task.title;
   document.querySelector('#dialog-description').textContent = task.description;
-  document.querySelector('#dialog-link').href = 'https://github.com/llltttwww/DexOmni/blob/main/configs/multi_task/' + task.id + '.yaml';
+  document.querySelector('#dialog-link').href = 'https://github.com/llltttwww/HandsOn/blob/main/configs/multi_task/' + task.id + '.yaml';
   dialog.showModal();
   document.body.style.overflow = 'hidden';
 }

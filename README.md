@@ -1,6 +1,6 @@
-# DexOmni project website
+# HandsOn project website
 
-Live homepage: https://llltttwww.github.io/DexOmni-website/
+Live homepage: https://llltttwww.github.io/HandsOn-website/
 
 A buildless research project page. Serve `dist/` with any static HTTP server:
 
@@ -28,7 +28,7 @@ RoboCasa and Nerfies, without copying their code or media.
 
 The opening figure retains the author's requested tall composition, natural arm
 pose. The dangling cable beside the leftmost freestanding hand is removed.
-Its source image is `dist/assets/dexomni-overview.jpg`
+Its source image is `dist/assets/handson-overview.jpg`
 (SHA-256 `aa73db0a9231e0cff494e62f656603f77c64995874b6a4793fe704391281b628`).
 The responsive WebP files and social card derive from this image. It is intentionally
 independent of the current paper's first figure.
@@ -66,7 +66,7 @@ the source manuscript, simulation assets, or video project.
 
 ```sh
 node tools/check-site.cjs
-SITE_URL=https://llltttwww.github.io/DexOmni-website/ node tools/check-site.cjs
+SITE_URL=https://llltttwww.github.io/HandsOn-website/ node tools/check-site.cjs
 ```
 
 Requires Playwright and a browser. `PLAYWRIGHT_MODULE` and `BROWSER_PATH` may point

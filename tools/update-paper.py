@@ -12,7 +12,7 @@ parser.add_argument('--source', type=Path, required=True)
 parser.add_argument('--revision', required=True, help='Verified manuscript Git commit')
 args = parser.parse_args()
 site = Path(__file__).resolve().parents[1]
-target = site / 'dist/assets/DexOmni.pdf'
+target = site / 'dist/assets/HandsOn.pdf'
 reader = PdfReader(args.source)
 writer = PdfWriter(clone_from=reader)
 seen = set()

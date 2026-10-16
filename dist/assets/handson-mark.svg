@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="HandsOn">
+  <title>HandsOn</title>
+  <rect x="210.76" y="260.05" width="201.08" height="175.95" rx="56.97" fill="#183449"/>
+  <path d="M244.27 253.35L224.16 119.30" fill="none" stroke="#183449" stroke-width="56.97" stroke-linecap="round"/>
+  <path d="M291.19 246.65L284.49 92.49" fill="none" stroke="#183449" stroke-width="56.97" stroke-linecap="round"/>
+  <path d="M338.11 250.00L351.51 112.59" fill="none" stroke="#183449" stroke-width="56.97" stroke-linecap="round"/>
+  <path d="M381.68 266.76L411.84 162.86" fill="none" stroke="#183449" stroke-width="56.97" stroke-linecap="round"/>
+  <path d="M224.16 357.24L103.51 273.46" fill="none" stroke="#183449" stroke-width="63.68" stroke-linecap="round"/>
+</svg>

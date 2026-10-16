@@ -15,7 +15,7 @@ def text(x, y, value, size, fill=ink):
     draw.text((x*scale, y*scale), value, font=ImageFont.truetype(args.font, size*scale), fill=fill)
 draw.rectangle((0, 0, 1200*scale, 8*scale), fill=ink)
 text(48, 82, 'DEXTEROUS MANIPULATION BENCHMARK', 14, accent)
-text(45, 125, 'DexOmni', 69)
+text(45, 125, 'HandsOn', 69)
 for i, line in enumerate(['Generalizable dexterous', 'manipulation, measured.']):
     text(48, 222+i*40, line, 29)
 draw.line((48*scale, 340*scale, 455*scale, 340*scale), fill='#dbe4eb', width=2)
@@ -23,7 +23,7 @@ text(48, 368, '66 tasks', 31)
 text(48, 414, '18,000 human demonstrations', 22, muted)
 text(48, 452, 'One shared evaluation platform', 22, muted)
 text(48, 548, 'Core-50  /  Transfer-16', 17, accent)
-with Image.open(assets / 'dexomni-overview.jpg') as hero:
+with Image.open(assets / 'handson-overview.jpg') as hero:
     hero = hero.convert('RGB')
     hero.thumbnail((650*scale, 570*scale), Image.Resampling.LANCZOS)
     card.paste(hero, (530*scale + (650*scale-hero.width)//2, (630*scale-hero.height)//2))
