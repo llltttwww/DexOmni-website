@@ -40,7 +40,9 @@ All extracted text is verified unchanged against the previous published manuscri
 Author order, affiliations, and contribution markers are in `tools/author-source.json`.
 The BibTeX citation remains unchanged.
 
-The overview film uses the corrected copy in `tools/film-copy.ts`. Its conclusion
+The maintained copy for future film renders is in `tools/film-copy.ts`. The
+published film is a separately reviewed artifact; editing this copy does not
+re-render it. Its conclusion
 recognizes instruction grounding as well as contact, coordination, and goal
 maintenance. Its explanation of the performance gap describes regression controls
 for demonstration count and duration. The source video project is maintained
@@ -57,10 +59,30 @@ python3 tools/update-paper.py --source /path/to/current/root.pdf --revision VERI
 python3 tools/prepare-social.py --font /path/to/sans-font.ttf
 ```
 
-`prepare-assets.py` is for a complete media refresh. It requires an explicit
-current manuscript tree, reviewed film, current PDF, and source revision so it
-cannot silently reintroduce the old cached manuscript or film. It does not modify
-the source manuscript, simulation assets, or video project.
+`prepare-assets.py` is for a complete media refresh. Pass the source film project
+and video cards directory explicitly, alongside the verified manuscript and film:
+
+```sh
+python3 tools/prepare-assets.py \
+  --project-root /path/to/workspace \
+  --film-root /path/to/film-project \
+  --cards-dir /path/to/video-cards \
+  --ffmpeg /path/to/ffmpeg \
+  --manuscript-root /path/to/current/manuscript \
+  --overview-video /path/to/reviewed/film.mp4 \
+  --paper-pdf /path/to/current/root.pdf \
+  --paper-revision VERIFIED_COMMIT
+```
+
+The workspace must contain `handson-release/`. The film project supplies
+`public/fonts/InterTight-normal-200_900.woff2` and `public/img/rerender_{a,b,c,d}.png`.
+The cards directory supplies `manifest.json`; relative `src` entries resolve
+against that directory. If a source is unavailable, the script uses the matching
+`sim_hammer.mp4` or `sim_spoon.mp4` in the cards directory.
+
+The script regenerates website media but does not modify the source manuscript,
+simulation assets, or video project. The explicit inputs prevent silently
+selecting an old cached manuscript or film.
 
 ## Validation
 

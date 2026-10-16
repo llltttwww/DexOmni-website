@@ -10,6 +10,8 @@ from PIL import Image, ImageOps
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--project-root', type=Path, required=True)
+parser.add_argument('--film-root', type=Path, required=True, help='Source film project containing public/fonts and public/img')
+parser.add_argument('--cards-dir', type=Path, required=True, help='Video cards directory containing manifest.json and fallback clips')
 parser.add_argument('--ffmpeg', required=True)
 parser.add_argument('--manuscript-root', type=Path, required=True, help='Verified current manuscript source tree')
 parser.add_argument('--overview-video', type=Path, required=True, help='Reviewed current rendered film')
@@ -33,11 +35,11 @@ for name in ['handson-mark.svg', 'handson-wordmark.svg', 'handson-lockup.svg', '
 for asset in brand.glob('handson-*'):
     if asset.suffix in {'.svg', '.png'}:
         shutil.copy2(asset, out / asset.name)
-shutil.copy2(root / 'dexomni-film/public/fonts/InterTight-normal-200_900.woff2', out / 'inter-tight.woff2')
+shutil.copy2(args.film_root / 'public/fonts/InterTight-normal-200_900.woff2', out / 'inter-tight.woff2')
 web_image(args.manuscript_root / 'figures/teleop-setup.png', 'teleoperation.webp', 1817, 92)
 web_image(root / 'handson-release/docs/pics/release-cameras.jpg', 'cameras.webp', 1600)
 for suffix in 'abcd':
-    web_image(root / f'dexomni-film/public/img/rerender_{suffix}.png', f'appearance-{suffix}.webp', 800)
+    web_image(args.film_root / f'public/img/rerender_{suffix}.png', f'appearance-{suffix}.webp', 800)
 
 # The release registry is the source of task membership and public identifiers.
 tree = ast.parse((root / 'handson-release/handson/handson/tasks/registry.py').read_text())
@@ -92,11 +94,13 @@ def encode(source, target, width=854, duration=None, start=None, audio=False):
     cmd += ['-movflags', '+faststart', str(out / target)]
     subprocess.run(cmd, check=True)
 
-manifest = json.loads((root / 'dexomni-intro-video/build/cards/manifest.json').read_text())
+manifest = json.loads((args.cards_dir / 'manifest.json').read_text())
 for key, name in [('sim_hammer', 'hammer'), ('sim_spoon', 'scooping')]:
     source = Path(manifest[key]['src'])
-    if not source.exists():
-        source = root / f'dexomni-intro-video/build/cards/{key}.mp4'
+    if not source.is_absolute():
+        source = args.cards_dir / source
+    if not source.is_file():
+        source = args.cards_dir / f'{key}.mp4'
     encode(source, name + '.mp4', duration=10)
     subprocess.run([args.ffmpeg, '-y', '-hide_banner', '-loglevel', 'error', '-ss', '2', '-i', str(out / (name + '.mp4')), '-frames:v', '1', str(out / (name + '.jpg'))], check=True)
 encode(args.overview_video, 'overview.mp4', width=1280, audio=True)

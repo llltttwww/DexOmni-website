@@ -1,8 +1,8 @@
 // Every word that appears on screen. tools/fetch_fonts.py subsets fonts from src/.
 
-export const TITLE = "DexOmni";
+export const TITLE = "HandsOn";
 export const SUBTITLE = "A Large-Scale Simulation Benchmark for Generalizable Dexterous Manipulation";
-export const REPO = "github.com/llltttwww/DexOmni";
+export const REPO = "github.com/llltttwww/HandsOn";
 
 export const COPY = {
   problem: {
