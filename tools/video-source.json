@@ -1,5 +1,5 @@
 {
-  "manuscript_revision": "7f164099235c8824e454bcff90bc45de7ae63229",
+  "manuscript_revision": "907efe45436a2d82efe81904e1cf7d8a3f7b2207",
   "duration_seconds": 120,
   "frames": 3600,
   "fps": 30,
@@ -7,13 +7,19 @@
     1280,
     720
   ],
-  "copy_sha256": "e4f03b12c8c7936676a1a7337cadc754d4e9fe0b7d77dee3410a990630f218ea",
-  "video_sha256": "28f802f8c3227bcb3e3ca32d51c89c6db5a4108290c81ae834c325ee5508c82d",
-  "render": "Remotion 4.0.532 Film composition with refreshed font subsets",
+  "video_sha256": "76aa717010698c59b73a8ab45e05a950a80e99ff75e691f2e6d42e2d7fd2d8da",
+  "poster_sha256": "b623d007b2916742a2ea8247f4416e7e02c2e202ef6162b31744811a82daf251",
+  "poster_time_seconds": 16.8,
+  "source_film": "dexomni-film/out/HandsOn_film_web.mp4 (1920x1080)",
+  "source_film_sha256": "5e8d540b573e142fc869b2f91172cbdba0576088a3cb631f7c477ece4733f136",
+  "render": "Remotion 4.0.532 FilmV2 composition; web encode 1280 px, libx264 CRF 25, AAC 96 kb/s from the score WAV",
   "changes": [
-    "Neutral opening description",
-    "Regression controls rather than equalized demonstrations/duration",
-    "Instruction grounding and physical execution both acknowledged"
+    "HandsOn name, approved grip logo and the RTX hero with the 3D logo",
+    "Wording aligned with the HandsOn arXiv manuscript and this page",
+    "Enlarged demonstrations use tasks of the project's own design only",
+    "Six physical-platform recordings, labelled qualitative",
+    "Quantitative charts shown without adjacent clips; Open Laptop angle curve restored",
+    "Softened transitions: no frame-to-frame luminance jump above 40"
   ],
-  "soundtrack": "Original complete soundtrack preserved"
+  "soundtrack": "Original score, aligned to the film's cue timeline"
 }
