@@ -15,7 +15,10 @@ def text(x, y, value, size, fill=ink):
     draw.text((x*scale, y*scale), value, font=ImageFont.truetype(args.font, size*scale), fill=fill)
 draw.rectangle((0, 0, 1200*scale, 8*scale), fill=ink)
 text(48, 82, 'DEXTEROUS MANIPULATION BENCHMARK', 14, accent)
-text(45, 125, 'HandsOn', 69)
+with Image.open(assets / 'handson-lockup@2x.png') as logo:
+    logo = logo.convert('RGBA')
+    logo.thumbnail((430*scale, 100*scale), Image.Resampling.LANCZOS)
+    card.paste(logo, (41*scale, 119*scale), logo)
 for i, line in enumerate(['Generalizable dexterous', 'manipulation, measured.']):
     text(48, 222+i*40, line, 29)
 draw.line((48*scale, 340*scale, 455*scale, 340*scale), fill='#dbe4eb', width=2)

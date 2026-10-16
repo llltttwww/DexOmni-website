@@ -29,14 +29,14 @@ RoboCasa and Nerfies, without copying their code or media.
 The opening figure retains the author's requested tall composition, natural arm
 pose. The dangling cable beside the leftmost freestanding hand is removed.
 Its source image is `dist/assets/handson-overview.jpg`
-(SHA-256 `aa73db0a9231e0cff494e62f656603f77c64995874b6a4793fe704391281b628`).
+(SHA-256 `0faca42c35d1d03a4f1ec6dc3809dc69ae7855f052dfca9c0f57b8b96d6e2d4f`).
 The responsive WebP files and social card derive from this image. It is intentionally
 independent of the current paper's first figure.
 
 The author block and download PDF follow the current author-approved arXiv
-manuscript, revision `a9bdb33fa6cab4088590dbe1799bc9520f9bc9b0`. The PDF has 47 pages.
-Image compression reduces download size without changing layout or page count;
-all extracted text is verified unchanged against the compiled manuscript. Details and hashes are in `tools/paper-source.json`.
+manuscript, revision `907efe45436a2d82efe81904e1cf7d8a3f7b2207`. The PDF has 47 pages.
+The download is the compiled manuscript, with the approved HandsOn logo in the overview.
+All extracted text is verified unchanged against the previous published manuscript. Details and hashes are in `tools/paper-source.json`.
 Author order, affiliations, and contribution markers are in `tools/author-source.json`.
 The BibTeX citation remains unchanged.
 

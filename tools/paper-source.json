@@ -1,12 +1,11 @@
 {
   "source": "Current author-approved arXiv manuscript",
-  "source_revision": "a9bdb33fa6cab4088590dbe1799bc9520f9bc9b0",
-  "source_pdf_sha256": "ae174af2865b3f321becee8df98d7081a56e17298942a95dd2594b40d0496080",
-  "website_pdf_sha256": "3a7101b7ea527cedc73680c0a38e1af288219cace78cc7d1fe72872025a38e8f",
+  "source_revision": "907efe45436a2d82efe81904e1cf7d8a3f7b2207",
+  "source_pdf_sha256": "c778a575487d4c1341c92f3da73cbbe6e6d853ed7824fbfd064889c25bfffae7",
+  "website_pdf_sha256": "c778a575487d4c1341c92f3da73cbbe6e6d853ed7824fbfd064889c25bfffae7",
   "pages": 47,
-  "website_pdf_bytes": 6285975,
-  "retired_internal_labels_removed": 0,
+  "website_pdf_bytes": 33844100,
   "all_other_extracted_text_preserved": true,
-  "text_validation": "Exact extracted text on every page; no textual post-processing",
-  "image_compression": "RGB JPEG quality 87; layout and page count preserved"
+  "text_validation": "Exact extracted text compared with previous published manuscript on all 47 pages",
+  "image_compression": "Compiled PDF copied without recompression; only logo rectangle changed in source hero image"
 }
