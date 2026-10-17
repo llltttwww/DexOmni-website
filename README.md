@@ -34,9 +34,11 @@ The responsive WebP files and social card derive from this image. It is intentio
 independent of the current paper's first figure.
 
 The author block and download PDF follow the current author-approved arXiv
-manuscript, revision `907efe45436a2d82efe81904e1cf7d8a3f7b2207`. The PDF has 47 pages.
-The download is the compiled manuscript, with the approved HandsOn logo in the overview.
-All extracted text is verified unchanged against the previous published manuscript. Details and hashes are in `tools/paper-source.json`.
+manuscript, revision `6cc3751202d17b135be7a2ec16c64f5c721d9541`. The PDF has 47 pages.
+The download is the compiled manuscript, with the approved HandsOn logo in the overview
+and the vector NatureWill wordmark in the first-page affiliation.
+All page text is verified unchanged against the previous published manuscript after
+normalizing whitespace (the wordmark adds an extracted line break in the affiliation). Details and hashes are in `tools/paper-source.json`.
 Author order, affiliations, and contribution markers are in `tools/author-source.json`.
 The BibTeX citation remains unchanged.
 

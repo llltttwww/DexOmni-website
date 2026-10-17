@@ -1,11 +1,11 @@
 {
   "source": "Current author-approved arXiv manuscript",
-  "source_revision": "907efe45436a2d82efe81904e1cf7d8a3f7b2207",
-  "source_pdf_sha256": "c778a575487d4c1341c92f3da73cbbe6e6d853ed7824fbfd064889c25bfffae7",
-  "website_pdf_sha256": "c778a575487d4c1341c92f3da73cbbe6e6d853ed7824fbfd064889c25bfffae7",
+  "source_revision": "6cc3751202d17b135be7a2ec16c64f5c721d9541",
+  "source_pdf_sha256": "928bf115063545d2331023a92f7a56085b2b4249c168c2d37ad9fc57c8e755af",
+  "website_pdf_sha256": "928bf115063545d2331023a92f7a56085b2b4249c168c2d37ad9fc57c8e755af",
   "pages": 47,
-  "website_pdf_bytes": 33844100,
+  "website_pdf_bytes": 33851291,
   "all_other_extracted_text_preserved": true,
-  "text_validation": "Exact extracted text compared with previous published manuscript on all 47 pages",
-  "image_compression": "Compiled PDF copied without recompression; only logo rectangle changed in source hero image"
+  "text_validation": "All 47 pages equal after whitespace normalization; affiliation wordmark introduces one extraction line break",
+  "image_compression": "Compiled PDF copied without recompression; company logo remains vector artwork"
 }
